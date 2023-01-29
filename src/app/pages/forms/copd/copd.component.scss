@@ -1,0 +1,360 @@
+@import "~@ng-select/ng-select/themes/default.theme.css";
+
+
+.top-container{
+    margin-top: 100px;
+    margin-bottom: 10px;
+}
+
+.body-head{
+    font-family: 'El Messiri';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2.8vw;
+    line-height: 136.8%;
+    color: #000000;
+    margin-bottom: 75px;
+
+}
+
+.cv-back{
+    background: #E5F1FF;
+    height: auto;
+    margin: 0px;
+    padding: 0;
+}
+
+.cv-back-up{
+    background-image: url('../../../../assets/image/cvBackup.png');
+    margin: 0;
+    height: 20vh;
+    background-repeat: no-repeat;
+    position: relative;
+    top: 10px;
+
+}
+
+.threeImage{
+    width: 20%;
+    position: relative;
+    left: 75%;
+    bottom: 50px;
+}
+
+.cv-back-down{
+    background-image: url('../../../../assets/image/cvBackdown.png');
+    height: 40vh;
+    margin: 0px;
+    background-repeat: no-repeat;
+    position: relative;
+    bottom: 40px;
+    padding: 0;
+    z-index: -1;
+
+}
+.iconCol{
+    margin-top: 20px;
+}
+
+.form-control{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 20px;
+    border: none;
+    color: #878787;
+    min-height: 40px;
+    margin-bottom: 10px;
+    margin-top: 20px;
+    background-color: #fff;
+
+}
+#exampleFormControlTextarea1{
+    min-height: 150px;
+    margin-bottom: 20px;
+
+}
+.form-check-input{
+    border-radius: 5px;
+    border-width: 1px;
+}
+
+.form-check-label{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 20px;
+    text-align: center;
+    color: #303030;
+}
+.text{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 22px;
+    color: #535353;
+
+}
+
+.h3Text{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 136.8%;
+    color: #000000;
+}
+
+.form-area{
+    margin-top: 75px;
+}
+
+.btn{
+    background-color: #001E6F;
+    color: #FFFFFF;
+    text-transform: none;
+    border-radius:10px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    width: 120px;
+    position: relative;
+    align-items: center;
+}
+
+.AdBtn{
+  width: 120px !important;
+}
+
+.middleBtn{
+    align-items: center;
+    text-align: center;
+}
+
+.image-three{
+    width: 100%;
+    position: relative;
+    float: right;
+    right: 0;
+
+}
+
+.head-para{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 136.8%;
+    color: #000000;
+
+}
+#pcrg{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 136.8%;
+    margin-left: 95px;
+    color: #000000;
+
+}
+
+
+
+.mat-stepper-horizontal {
+    margin-top: 8px;
+  }
+
+  .mat-mdc-form-field {
+    margin-top: 16px;
+  }
+  .mat-stepper-horizontal{
+    background-color: transparent;
+  }
+  .mat-form-field{
+    width: 100%;
+    background-color: #fff;
+  }
+
+.imputDetails{
+    background: transparent;
+    padding: 0px;
+}
+
+.num-text{
+    align-items: left;
+    text-align: left;
+    margin-left: 30px;
+}
+
+
+
+.right p{
+    align-items: flex-end;
+    text-align: right;
+}
+
+.mat-stepper{
+    width: 80%;
+}
+
+// file upload
+
+
+
+
+
+
+.file-drop-area {
+  position: relative;
+  // display: flex;
+  min-width: 450px;
+  min-height: 100px;
+  border: 1px dashed rgba(0, 0, 0, 0.4);
+  border-radius: 3%;
+  text-align: center;
+  height: 150px;
+
+}
+
+.choose-file-button {
+  flex-shrink: 0;
+  background-color: rgba(0, 0, 0, 0.04);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 3%;
+  padding: 8px 15px;
+  margin-right: 10px;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+
+.file-input {
+
+  cursor: pointer;
+    display: block;
+    width: 100%;
+    height: 145px;
+    position: relative;
+    border-radius: 3%;
+    background-color: transparent;
+    // visibility: hidden;
+    bottom: 100%;
+    // z-index: 0;
+
+}
+
+.file-text1{
+  margin: 0;
+  position: relative;
+  // z-index: 1;
+
+}
+.importImg{
+  position: relative;
+  // z-index: 1;
+}
+
+.table.mat-table.cdk-table.mat-elevation-z8{
+  width: 1000px;
+}
+.drag-text{
+  background-color: #fff;
+}
+.mat-table{
+  width: 100%;
+}
+
+.mat-form-field[_ngcontent-dtp-c186] {
+  width: 100%;
+  background-color: #fff;
+}
+.mat-form-field-flex.ng-tns-c149-4 {
+  padding: 0 !important;
+}
+
+
+.spinner-row{
+  padding: 20px 0 20px 0;
+}
+
+.mat-form-field-type-mat-select{
+  height: 50px;
+}
+
+tr.mat-header-row {
+  height: 56px;
+  background-color:#001E6F;
+}
+th.mat-header-cell.cdk-header-cell.cdk-column-qualification.mat-column-qualification.ng-star-inserted{
+  color: #fff;
+  width: 25%;
+}
+th.mat-header-cell.cdk-header-cell.cdk-column-year.mat-column-year.ng-star-inserted{
+color: #fff;
+width: 25%;
+}
+th.mat-header-cell.cdk-header-cell.cdk-column-college.mat-column-college.ng-star-inserted{
+color: #fff;
+}
+
+td.mat-cell.cdk-cell.cdk-column-qualification.mat-column-qualification.ng-star-inserted{
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 13px;
+line-height: 20px;
+color: #878787;
+}
+td.mat-cell.cdk-cell.cdk-column-year.mat-column-year.ng-star-inserted{
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 20px;
+  color: #878787;
+}
+td.mat-cell.cdk-cell.cdk-column-college.mat-column-college.ng-star-inserted{
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 20px;
+  color: #878787;
+}
+
+.tr.mat-row.cdk-row.ng-star-inserted{
+  padding: 20px 0 20px 0;
+}
+
+.col-form-label{
+  margin: 20px 0 20px 0;
+}
+.form-row{
+  margin-top: 50px;
+  font-family: 'Poppins';
+font-weight: 400;
+font-size: 13px;
+line-height: 20px;
+color: #878787;
+}
+
+.chechbox-style{
+  margin-top: 50px;
+}
+
+th.mat-header-cell.cdk-header-cell.cdk-column-position.mat-column-position.ng-star-inserted {
+  color: #fff;
+}
+
+th.mat-header-cell.cdk-header-cell.cdk-column-organization.mat-column-organization.ng-star-inserted {
+  color: #fff;
+}
+th.mat-header-cell.cdk-header-cell.cdk-column-duration.mat-column-duration.ng-star-inserted {
+  color: #fff;
+}
+

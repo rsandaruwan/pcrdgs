@@ -1,0 +1,439 @@
+// .container{
+//     margin-top: 50px;
+// }
+.body-head{
+    font-family: 'El Messiri';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 3vw;
+    line-height: 136.8%;
+    color: #000000;
+}
+
+.head-sub-text{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.3vw;
+    line-height: 180.8%;
+    color: #001E6F;
+}
+
+.sub-text{
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.0vw;
+    line-height: 180.8%;
+    color: #303030;
+}
+
+// cv card
+
+.cv-back{
+    // background-image: url("../../../assets/image/cvBack.png");
+    width: 100%;
+    // height: 100vh;
+    background-repeat: no-repeat;
+    // margin-top: 150px;
+    background-position: center;
+    background-size: cover;
+    height: 60vh;
+}
+
+.imageback{
+  background-size: cover;
+  width: 100%;
+}
+.cardBacka{
+  width: 100;
+  margin-top: 7%;
+}
+.carddesk{
+  position: relative;
+  bottom: 83%;
+}
+
+
+.card{
+  background-color: transparent ;
+ box-shadow: none;
+}
+
+.card1{
+   position: absolute;
+   top: 40%;
+   bottom: 40%;
+}
+.card2{
+  position: absolute;
+  top: 20%;
+  bottom: 20%;
+}
+.card3{
+  position: absolute;
+  top: 40%;
+  bottom: 40%;
+}
+.card4{
+  position: absolute;
+  top: 20%;
+  bottom: 20%;
+}
+
+.boxs{
+  width: 100%;
+  position: relative;
+
+}
+
+
+
+
+.ex-down{
+  bottom: 60%;
+}
+
+.round-down{
+  position: relative;
+  bottom: 15%;
+  top: 15%;
+}
+
+.round-up{
+  position: relative;
+  top: -25%;
+  bottom: 25%;
+
+}
+
+.bg-lite{
+    border-radius: 50%;
+}
+
+.c-title{
+    font-family: 'El Messiri';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 50px;
+    line-height: 136.8%;
+    color: #000000;
+    align-items: center;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.c-text{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 136.8%;
+    text-align: center;
+    color: #000000;
+    margin: 15px;
+}
+
+
+// Our Recognitions and Achievements
+
+.recognitions{
+    margin-top: 100px;
+}
+
+
+.card-img-top{
+    width: 40%;
+
+}
+
+.card-title-2{
+    align-items: center;
+    text-align: center;
+
+    font-family: 'El Messiri';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 25px;
+    text-align: center;
+    color: #393939;
+    min-height: 50px;
+}
+.card-text{
+    align-items: center;
+    text-align: center;
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 22px;
+    text-align: center;
+    // position: relative;
+    // top: 100px;
+
+    color: #000000;
+}
+
+.recognitions .body-head{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+//PCRG
+
+// .image-section{
+//     margin-top: 40px;
+// }
+
+
+.iconImage{
+    margin-top: 30px;
+    margin-left: 30px;
+
+}
+
+.colMainTopic{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    color: #000000;
+    margin-top: 20px;
+}
+
+.sub-description{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 176.52%;
+    color: #737373;
+}
+
+.explore{
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 176.52%;
+    color: #000000;
+    }
+    a{
+        color: #000000;
+    }
+
+    .image-center{
+        align-items: center;
+        text-align: center;
+        justify-items: center;
+
+    }
+    .text-black{
+      scale: 1.2;
+    }
+
+    @media screen and (max-width: 1440px) {
+
+      .text-black{
+        scale: 1.0;
+      }
+
+      .cardBacka{
+        margin-top: 20%;
+      }
+      .rounds{
+        margin-top: 0%;
+      }
+    }
+
+    @media screen and (max-width: 1024px) {
+
+      .text-black{
+        scale: 1.2;
+      }
+      .c-title{
+        margin-top: 15px;
+        font-size: 40px;
+      }
+      .card-text{
+        font-size: 13px;
+      }
+      .box-down{
+      margin-top: 12%;
+      }
+      .card1 {
+        top: 55%;
+        bottom: 55%;
+      }
+      .card2{
+        top: 40%;
+        bottom: 40%;
+      }
+
+      .card3{
+        top: 55%;
+        bottom: 55%;
+      }
+      .card4{
+        top: 40%;
+        bottom: 40%;
+      }
+      // .rounds{
+      //   bottom: 25%;
+      // }
+
+      .ex-down{
+        position: relative;
+        bottom: 50%;
+      }
+
+      .imageup{
+        position: relative;
+        bottom: 30%;
+      }
+
+      .recognitions{
+        position: relative;
+        bottom: 50%;
+      }
+    }
+
+    @media screen and (max-width: 768px)  {
+      .body-head{
+        font-size: 6vw;
+      }
+      .head-sub-text{
+        font-size: 2.3vw;
+      }
+
+      .sub-text{
+        font-size: 2vw;
+      }
+      .text-black{
+        scale: 1.3;
+      }
+       .c-title{
+        margin: 0;
+        font-size: 22px;
+       }
+       .card-text{
+        font-size: 10px;
+        margin: 0;
+       }
+
+       .round1{
+        left: 20%;
+       }
+       .round3{
+        right: 20%;
+       }
+       .carddesk{
+        bottom: 65%;
+       }
+       .iconImage{
+        margin-left: 0;
+       }
+
+       .rounds{
+        position: relative;
+        top: -10%;
+       }
+
+
+    }
+
+    @media screen and (max-width: 425px)  {
+
+      .card{
+        height: 25% !important;
+      }
+      .card1{
+        position: absolute;
+        top: 100%;
+        bottom: 100%;
+     }
+     .card2{
+       position: absolute;
+       top: 25%;
+       bottom: 25%;
+     }
+     .card3{
+       position: absolute;
+       top: 25%;
+       bottom: 25%;
+     }
+     .card4{
+       position: absolute;
+       top: 25%;
+       bottom: 25%;
+     }
+     .card-normal{
+      height: 115% !important;
+     }
+
+     .box-down{
+      margin-top: 25%;
+     }
+
+
+
+     .image-col{
+      width: 20%;
+    }
+
+    .ex-down{
+      margin-top: 40rem;
+    }
+    .round1{
+      left: 0;
+    }
+
+    .text-black{
+      scale: 0.8;
+    }
+
+    .round2{
+      margin-top: 38%;
+    }
+
+    .round3{
+      right: 0;
+      bottom: 70%;
+    }
+    .rounds{
+      margin-top: 100rem;
+
+    }
+    .c-title{
+      font-size: 48px;
+      margin-top: 20%;
+    }
+
+    .c-text{
+      font-size: 18px;
+    }
+
+    .round-down{
+      bottom: -5%;
+      top: -5%;
+    }
+    .round-up{
+      top: -45%;
+      bottom: -45%;
+    }
+    .colMainTopic{
+      width: 85%;
+    }
+
+    .image-col{
+      width: 15%;
+    }
+
+    }
+
+

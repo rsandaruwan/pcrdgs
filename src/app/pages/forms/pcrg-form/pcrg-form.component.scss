@@ -1,0 +1,184 @@
+
+
+.top-container{
+    margin-top: 100px;
+    margin-bottom: 10px;
+}
+
+.body-head{
+    font-family: 'El Messiri';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2.8vw;
+    line-height: 136.8%;
+    color: #000000;
+    margin-bottom: 75px;
+    
+}
+
+.cv-back{
+    background: #E5F1FF;
+    height: auto;
+    margin: 0px;
+    padding: 0;
+}
+
+.cv-back-up{
+    background-image: url('../../../../assets/image/cvBackup.png');
+    margin: 0;
+    height: 20vh;
+    background-repeat: no-repeat;
+}
+
+.cv-back-down{
+    background-image: url('../../../../assets/image/cvBackdown.png');
+    height: 40vh;
+    margin: 0px;
+    background-repeat: no-repeat;
+    position: relative;
+    bottom: 40px;
+    padding: 0;
+    z-index: -1;
+  
+}
+.iconCol{
+    margin-top: 20px;
+}
+
+.form-control{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 20px;
+    border: none;
+    color: #878787;
+    min-height: 40px;
+    margin-bottom: 10px;
+    margin-top: 20px;
+    background-color: #fff;
+
+}
+#exampleFormControlTextarea1{
+    min-height: 150px;
+    margin-bottom: 20px;
+   
+}
+.form-check-input{
+    border-radius: 5px;
+    border-width: 1px;
+}
+
+.form-check-label{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 20px;
+    text-align: center;
+    color: #303030;
+}
+.text{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 22px;
+    color: #535353;
+
+}
+
+.h3Text{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 136.8%;
+    color: #000000;
+}
+
+.form-area{
+    margin-top: 75px;
+}
+
+.btn{
+    background-color: #001E6F;
+    color: #FFFFFF;
+    text-transform: none;
+    border-radius:10px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 0.8vw;
+    width: 200px;
+    position: relative;
+    align-items: center;
+}
+
+.middleBtn{
+    align-items: center;
+    text-align: center;
+}
+
+.image-three{
+    width: 100%;
+    position: relative;
+    float: right;
+    right: 0;
+
+}
+
+.head-para{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 136.8%;
+    color: #000000;
+
+}
+#pcrg{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 136.8%;
+    margin-left: 95px;
+    color: #000000;
+
+}
+
+
+
+.mat-stepper-horizontal {
+    margin-top: 8px;
+  }
+  
+  .mat-mdc-form-field {
+    margin-top: 16px;
+  }
+  .mat-stepper-horizontal{
+    background-color: transparent;
+  }
+  .mat-form-field{
+    width: 100%;
+  }
+
+.imputDetails{
+    background: transparent;
+    padding: 0px;
+}
+
+.num-text{
+    align-items: left;
+    text-align: left;
+    margin-left: 30px;
+}
+
+
+
+.right p{
+    align-items: flex-end;
+    text-align: right;
+}
+

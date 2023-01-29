@@ -1,0 +1,403 @@
+.top-container{
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.body-head{
+    font-family: 'El Messiri';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2.8vw;
+    line-height: 136.8%;
+    color: #000000;
+    margin-bottom: 75px;
+
+}
+
+.body-sub-head{
+    font-family: 'El Messiri';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2.3vw;
+    line-height: 136.8%;
+    color: #000000;
+}
+
+.sub-Text{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.04vw;
+    line-height: 180.8%;
+    color: #303030;
+}
+
+.btn{
+    background-color: #001E6F;
+    color: #FFFFFF;
+    text-transform: none;
+    border-radius:10px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1vw;
+    width: 200px;
+    position: relative;
+    right: 0;
+}
+
+.text-center{
+    position: absolute;
+    margin: 20px 0px 20px 0px ;
+
+}
+
+.cv-back{
+    background: #E5F1FF;
+    height: auto;
+    margin: 0px;
+    padding: 0;
+}
+
+.cv-back-up{
+    background-image: url('../../../assets/image/cvBackup.png');
+    margin: 0;
+    height: 20vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+}
+
+.cv-back-down{
+    background-image: url('../../../assets/image/cvBackdown.png');
+    height: 40vh;
+    margin: 0px;
+    background-repeat: no-repeat;
+    position: relative;
+    bottom: 40px;
+    padding: 0;
+    z-index: -1;
+    width: 100%;
+    background-size: cover;
+
+}
+
+.duration{
+    position: absolute;
+    left: 60%;
+    bottom:50px;
+
+}
+
+.h2-text{
+    font-family: 'El Messiri';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 136.8%;
+    color: #000000;
+    margin: 0;
+}
+
+.h1-text{
+    font-family: 'El Messiri';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 50px;
+    line-height: 136.8%;
+    color: #000000;
+
+    position: absolute;
+    // left: 40%;
+}
+
+.leadyDoc{
+  width: 100%;
+  position: relative;
+  top: 120px;
+}
+
+.h2-text2{
+    font-family: 'El Messiri';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 136.8%;
+    color: #000000;
+    margin-top: 20px;
+
+}
+
+.text-left{
+    position: absolute;
+    left: 50%;
+    width: 300px;
+    top: 100px;
+}
+.point{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 180.8%;
+    color: #000000;
+}
+
+.course{
+    font-family: 'El Messiri';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 136.8%;
+    color: #000000;
+}
+
+.course-dec{
+    margin-left: 50px;
+}
+
+.module-text{
+    font-family: 'El Messiri';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 136.8%;
+    color: #000000;
+}
+
+.module-sub-text{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 180.8%;
+    color: #303030;
+
+}
+
+.module-sub-text1{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 180.8%;
+    color: #808080;
+}
+
+.module-sub-text2{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.1vw;
+    line-height: 180.8%;
+    color: #303030;
+
+}
+
+.col-inside{
+    margin: 30px;
+}
+
+.middle-cv-white{
+  background-size: cover;
+  width: 100%;
+}
+
+.gap{
+    margin-bottom: 50px;
+}
+.total{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.6vw;
+    line-height: 180.8%;
+    color: #001E6F;
+}
+
+.price{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.6vw;
+    line-height: 180.8%;
+    color: #001E6F;
+    margin-left: 50px;
+
+}
+
+.normal-text{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.2vw;
+    line-height: 180.8%;
+    color: #303030;
+}
+.middle-cv-back-down{
+    // background-image: url('../../../assets/image/cvBackdown.png');
+    margin: 0px;
+    background-repeat: no-repeat;
+    position: relative;
+    bottom: 0px;
+    padding: 0;
+
+}
+
+.panel-back {
+    background-image: url('../../../assets/image/cvBack.png');
+    height: 60%;
+    background-repeat: no-repeat;
+    margin-top: 100px;
+    width: 100%;
+    background-size: cover;
+    height: 61%;
+}
+
+// card
+
+.card-img-top{
+    width: 50%;
+    align-items: center;
+    border-radius: 50%;
+
+
+}
+
+.cd-image{
+    align-items: center;
+    text-align: center;
+}
+
+.card-title-2{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.2vw;
+    line-height: 112.5%;
+    color: #193B58;
+    text-align: center;
+}
+
+.card-title-3{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 112.5%;
+    letter-spacing: 0.05em;
+    color: #193B58;
+    text-align: center;
+}
+.card-text{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 112.5%;
+    text-align: center;
+    color: #6B6B6B;
+}
+
+@media only screen and (max-width: 1440px) {
+.duration{
+  bottom: 0px;
+}
+.middle-cv-white{
+  height: 100%;
+  margin-top: 4%;
+}
+}
+
+@media only screen and (max-width: 1024px) {
+
+.middle-cv-white{
+  height: 100%;
+  margin-top: 7%;
+}
+}
+
+@media only screen and (max-width: 768px) {
+.gap{
+  margin-bottom:0px ;
+}
+.middle-cv-white{
+  height: 70%;
+  margin-top:11%;
+}
+.card-body{
+  padding: 0px;
+}
+// .panel-back{
+//   height: 40%;
+// }
+.duration{
+    left: 53%;
+    bottom: 32%;
+}
+.panel-back{
+  height: 40%;
+}
+  }
+  @media only screen and (max-width: 425px) {
+.body-head{
+  font-size: 30px;
+  margin-top: 30p;
+}
+.sub-Text{
+font-size: 18px;
+  }
+  .btn{
+    font-size: 18px;
+  }
+  .duration{
+    left: 16%;
+    bottom: -60%;
+  }
+  .h2-text{
+    font-size: 25px;
+  }
+  .h1-text{
+    font-size: 40px;
+  }
+  .h2-text2{
+    font-size: 30px;
+    margin: 0;
+  }
+  .body-sub-head{
+    font-size: 20px;
+  }
+  .module-sub-text2{
+    font-size: 18px;
+  }
+  .leadyDoc{
+    top: 70px;
+  }
+  .body-sub-head{
+    font-size: 24px;
+  }
+  .total{
+    font-size: 20px;
+  }
+  .price{
+    font-size: 20px;
+  }
+  .normal-text{
+    font-size: 16px;
+  }
+  .panel-back{
+    height: 135%;
+  }
+
+  }
+  @media only screen and (max-width: 425px) {
+    .duration{
+      bottom: -72%;
+    }
+
+    .leadyDoc{
+      top: 60px;
+    }
+
+  }
+

@@ -1,0 +1,418 @@
+<div class="container top-container">
+
+  <h2 class="body-head">Enroll Now</h2>
+
+  <p class="head-para"> <img src="../../../../assets/image/pcdgLogo.png" alt="" >
+      Application for the membership of the Primary Care Respiratory Group Sri Lanka. <br>
+      <span id="pcrg">(CCEBDM)</span>
+  </p>
+
+</div>
+
+<div class="container-fluid cv-back-up">
+  <img src="../../../../assets/image/three-image.png" alt=""class="threeImage">
+</div>
+
+<div class="container-fluid cv-back">
+  <div class="container">
+            <mat-stepper linear #stepper class="mat-stepper">
+              <mat-step [stepControl]="firstFormGroup" [editable]="isEditable">
+                <form [formGroup]="firstFormGroup" autocomplete="off">
+                  <!-- <ng-template matStepLabel>Personal Details</ng-template> -->
+                 <div class="row descriptionRow">
+                    <div class="col-md-4 detail1 left">
+                        <p>Personal Details</p>
+                    </div>
+                    <div class="col-md-4 detail2">
+                      <p>Edicational Qualifications</p>
+                    </div>
+                    <div class="col-md-4 detail3 right">
+                      <p>Other Details</p>
+                    </div>
+
+                 </div>
+
+                    <input matInput placeholder="Full Name" formControlName="firstCtrl" required  class="form-control">
+
+                    <div class="row">
+                      <div class="col-md-4">
+                          <p>Current  Affiliation</p>
+                      </div>
+                      <div class="col-md-8">
+                          <section class="example-section">
+                              <mat-checkbox class="example-margin">Private</mat-checkbox>
+                          </section>
+                          <section class="example-section">
+                              <mat-checkbox class="example-margin">Governement</mat-checkbox>
+                          </section>
+                          <section class="example-section">
+                              <mat-checkbox class="example-margin">Other</mat-checkbox>
+                          </section>
+
+                          <textarea matInput formControlName="firstCtrl" required  class="form-control" placeholder="If other, Please specify...." style="min-height: 75px;"></textarea>
+
+                      </div>
+                    </div>
+                    <label for="">Communication Address</label>
+
+                    <input matInput placeholder="Number" formControlName="firstCtrl" required  class="form-control">
+
+                    <input matInput placeholder="Street" formControlName="firstCtrl" required  class="form-control">
+
+                    <input matInput placeholder="City" formControlName="firstCtrl" required  class="form-control">
+
+                    <input matInput placeholder="Mobile Number" formControlName="firstCtrl" required  class="form-control" style="max-width: 400px;">
+
+                    <input matInput placeholder="Email" formControlName="firstCtrl" required  class="form-control" style="max-width: 400px;">
+
+
+
+
+
+
+                      <mat-form-field appearance="outline" >
+
+                        <input matInput [matDatepicker]="picker" class="form-control" style="max-width: 400px;" placeholder="Date of birth">
+                        <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+                        <mat-datepicker #picker></mat-datepicker>
+                      </mat-form-field>
+
+
+                      <!-- File drag and drop -->
+
+
+                        <div class="file-drop-area mt-5">
+
+                          <div class="drag-text">
+                            <img src="../../../../assets/image/import.png" alt="" class="importImg"> <br>
+                            <p class="file-text1">Click or drag files into this area to upload your attachment(Optional)</p><br>
+                            <p class="file-text1">Maximum file size 10MB</p><br>
+                            <p class="file-text1">Supports : PDF</p><br>
+                          </div>
+                          <input class="file-input" type="file" multiple onclick="nee()">
+
+
+                         </div>
+
+
+
+                      <!-- End -->
+
+
+                    <input matInput placeholder="Medical Council Registration No" formControlName="firstCtrl" required  class="form-control" style="max-width: 400px;">
+
+
+
+                    <input matInput placeholder="Date Of Registration" formControlName="firstCtrl" required  class="form-control">
+
+                    <div class="row">
+                      <div class="col-md-4">
+                          <p>Current  Affiliation</p>
+                      </div>
+                      <div class="col-md-8">
+                          <section class="example-section">
+                              <mat-checkbox class="example-margin">Private</mat-checkbox>
+                          </section>
+                          <section class="example-section">
+                              <mat-checkbox class="example-margin">Governement</mat-checkbox>
+                          </section>
+                          <section class="example-section">
+                              <mat-checkbox class="example-margin">Other</mat-checkbox>
+                          </section>
+                       </div>
+                    </div>
+
+                    <div class="middleBtn">
+                    <button mat-button matStepperNext class="btn">Next</button>
+                  </div>
+                </form>
+              </mat-step>
+              <mat-step [stepControl]="secondFormGroup" [editable]="isEditable">
+                <form [formGroup]="secondFormGroup">
+                  <div class="row descriptionRow">
+                    <div class="col-md-4 detail1 left">
+                        <p>Personal Details</p>
+                    </div>
+                    <div class="col-md-4 detail2">
+                      <p>Edicational Qualifications</p>
+                    </div>
+                    <div class="col-md-4 detail3 right">
+                      <p>Other Details</p>
+                    </div>
+
+                 </div>
+                  <!-- Table strat -->
+
+                  <div class="row  spinner-row">
+                    <div class="col-md-3">
+
+                        <mat-form-field appearance="fill">
+                          <mat-label>Qualification</mat-label>
+                          <mat-select>
+                            <mat-option *ngFor="let qualification of qualifications" [value]="qualification.value">
+                              {{qualification.viewValue}}
+                            </mat-option>
+                          </mat-select>
+                        </mat-form-field>
+
+                    </div>
+                    <div class="col-md-4">
+                      <mat-form-field class="example-full-width" appearance="fill">
+                        <mat-label>College/Institution/Board/University</mat-label>
+                        <mat-icon matSuffix><span class='material-icons'>search</span></mat-icon>
+                        <input type="text"
+                               placeholder="Pick one"
+                               aria-label=""
+                               matInput
+                               [formControl]="myControl"
+                               [matAutocomplete]="auto">
+                        <mat-autocomplete #auto="matAutocomplete">
+                          <mat-option *ngFor="let option of filteredOptions | async" [value]="option">
+                            {{option}}
+                          </mat-option>
+                        </mat-autocomplete>
+                      </mat-form-field>
+                    </div>
+
+                    <div class="col-md-3">
+                      <mat-form-field appearance="fill">
+                        <mat-label> year</mat-label>
+                        <mat-select>
+                          <mat-option *ngFor="let year of years" [value]="year.value">
+                            {{year.viewValue}}
+                          </mat-option>
+                        </mat-select>
+                      </mat-form-field>
+                    </div>
+                    <div class="col-md-2">
+                      <div class="AdBtn">
+                        <button class=" btn addbtn" >Add</button>
+                      </div>
+                    </div>
+                  </div>
+                  <table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+
+                    <!-- Position Column -->
+                    <ng-container matColumnDef="qualification">
+                      <th mat-header-cell *matHeaderCellDef> Qualification. </th>
+                      <td mat-cell *matCellDef="let element"> {{element.qualification}} </td>
+                    </ng-container>
+
+                    <!-- Name Column -->
+                    <ng-container matColumnDef="college">
+                      <th mat-header-cell *matHeaderCellDef> College </th>
+                      <td mat-cell *matCellDef="let element"> {{element.college}} </td>
+                    </ng-container>
+
+                    <!-- Weight Column -->
+                    <ng-container matColumnDef="year">
+                      <th mat-header-cell *matHeaderCellDef> Year </th>
+                      <td mat-cell *matCellDef="let element"> {{element.year}} </td>
+                    </ng-container>
+
+
+
+                    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+                    <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+
+                    <!-- Row shown when there is no matching data. -->
+                    <tr class="mat-row" *matNoDataRow>
+                      <!-- <td class="mat-cell" colspan="4">No data matching the filter "{{input.value}}"</td> -->
+                    </tr>
+                  </table>
+
+                  <!-- form -->
+
+                    <div class="form-group row form-row">
+                      <label for="inputPassword" class="col-sm-6 col-form-label">Average number of patient treated in a month?</label>
+                      <div class="col-sm-2">
+                        <input matInput placeholder="" formControlName="firstCtrl" required  class="form-control">
+                      </div>
+
+                      <label for="inputPassword" class="col-sm-6 col-form-label">Average number of patient with COPD/Asthma seen in a month??</label>
+                      <div class="col-sm-2">
+                        <input class="form-control">
+                      </div>
+
+                      <label for="inputPassword" class="col-sm-6 col-form-label">Years of Professional/ Clinical Experience?</label>
+                      <div class="col-sm-2">
+                        <input  class="form-control">
+                      </div>
+                    </div>
+
+
+
+
+
+
+
+<!--
+                    <select [(ngModel)]="firstSelectValue">
+                      <option *ngFor="let qualifications of firstSelectOptions" [value]="qualifications">
+                         {{ qualifications }}
+                      </option>
+                     </select>
+
+                     <select *ngIf="firstSelectValue" [(ngModel)]="secondSelectValue" >
+                      <option *ngFor="let qualifications of secondSelectOptions" [value]="qualifications">
+                        {{ qualifications }}
+                      </option>
+                    </select>
+
+
+                    <div>
+                      <div>First select value: {{ firstSelectValue }}</div>
+                      <div>Second select value:  {{ secondSelectValue }}</div>
+                    </div> -->
+
+
+
+
+
+
+                  <div>
+                    <br><br>
+                    <div class="middleBtn">
+                      <button class="btn middleBtn" mat-button matStepperNext>Next</button>
+                    </div>
+                  </div>
+
+                </form>
+              </mat-step>
+
+              <mat-step>
+
+                <div class="row descriptionRow">
+                  <div class="col-md-4 detail1 left">
+                      <p>Personal Details</p>
+                  </div>
+                  <div class="col-md-4 detail2">
+                    <p>Edicational Qualifications</p>
+                  </div>
+                  <div class="col-md-4 detail3 right">
+                    <p>Other Details</p>
+                  </div>
+
+               </div>
+                <!-- Table strat -->
+
+                <div class="row  spinner-row">
+                  <div class="col-md-3">
+
+                      <mat-form-field appearance="fill">
+                        <mat-label>Position</mat-label>
+                        <mat-select>
+                          <mat-option *ngFor="let position of positions" [value]="position.value">
+                            {{position.viewValue}}
+                          </mat-option>
+                        </mat-select>
+                      </mat-form-field>
+
+                  </div>
+                  <div class="col-md-4">
+                    <mat-form-field class="example-full-width" appearance="fill">
+                      <mat-label>	Organization/Hospital</mat-label>
+                      <mat-icon matSuffix><span class='material-icons'>search</span></mat-icon>
+                      <input type="text"
+                             placeholder="Pick one"
+                             aria-label=""
+                             matInput
+                             [formControl]="myControl1"
+                             [matAutocomplete]="auto">
+                      <mat-autocomplete #auto="matAutocomplete">
+                        <mat-option *ngFor="let option of filteredOptions1 | async" [value]="option">
+                          {{option}}
+                        </mat-option>
+                      </mat-autocomplete>
+                    </mat-form-field>
+                  </div>
+
+                  <div class="col-md-3">
+                    <mat-form-field appearance="fill">
+                      <mat-label> Duration</mat-label>
+                      <mat-select>
+                        <mat-option *ngFor="let duration of durations" [value]="duration.value">
+                          {{duration.viewValue}}
+                        </mat-option>
+                      </mat-select>
+                    </mat-form-field>
+                  </div>
+                  <div class="col-md-2">
+                    <div class="AdBtn">
+                      <button class=" btn addbtn" >Add</button>
+                    </div>
+                  </div>
+                </div>
+                <table mat-table [dataSource]="dataSource1" class="mat-elevation-z8">
+
+                  <!-- Position Column -->
+                  <ng-container matColumnDef="position">
+                    <th mat-header-cell *matHeaderCellDef> Position </th>
+                    <td mat-cell *matCellDef="let element"> {{element.position}} </td>
+                  </ng-container>
+
+                  <!-- Name Column -->
+                  <ng-container matColumnDef="organization">
+                    <th mat-header-cell *matHeaderCellDef> Organization/Hospital </th>
+                    <td mat-cell *matCellDef="let element"> {{element.organization}} </td>
+                  </ng-container>
+
+                  <!-- Weight Column -->
+                  <ng-container matColumnDef="duration">
+                    <th mat-header-cell *matHeaderCellDef> Duration </th>
+                    <td mat-cell *matCellDef="let element"> {{element.duration}} </td>
+                  </ng-container>
+
+
+
+                  <tr mat-header-row *matHeaderRowDef="displayedColumns1"></tr>
+                  <tr mat-row *matRowDef="let row; columns: displayedColumns1;"></tr>
+
+                  <!-- Row shown when there is no matching data. -->
+                  <tr class="mat-row" *matNoDataRow>
+                    <!-- <td class="mat-cell" colspan="4">No data matching the filter "{{input.value}}"</td> -->
+                  </tr>
+                </table>
+
+                <!-- form -->
+
+                <div class="form-group chechbox-style">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="gridCheck">
+                    <label class="form-check-label" for="gridCheck">
+                        Subscribe to our NewsLetter
+                    </label>
+                  </div>
+
+                </div>
+
+
+
+
+
+
+                <div>
+                  <br><br>
+                  <div class="middleBtn">
+                    <button class="btn middleBtn" mat-button matStepperNext>Next</button>
+                  </div>
+                </div>
+
+                <!-- <div>
+                  <button mat-button (click)="stepper.reset()">Reset</button>
+                </div> -->
+              </mat-step>
+          </mat-stepper>
+  </div>
+
+
+</div>
+
+<div class="container-fluid cv-back-down"></div>
+
+
+
+
+
+
+

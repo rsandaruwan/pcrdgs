@@ -1,0 +1,201 @@
+<div class="container top-container">
+
+    <h2 class="body-head">Enroll Now</h2>
+
+    <p class="head-para"> <img src="../../../../assets/image/pcdgLogo.png" alt="">
+        Application for the membership of the Primary Care Respiratory Group Sri Lanka. <br>
+        <span id="pcrg">(PCRG) </span>
+    </p>
+
+</div>
+
+<div class="container-fluid cv-back-up"></div>
+
+<div class="container-fluid cv-back">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 ">
+
+              <mat-stepper linear #stepper>
+                <mat-step [stepControl]="firstFormGroup" [editable]="isEditable">
+
+                  <form [formGroup]="firstFormGroup" (ngSubmit)="pcrgNextForm()">
+                    <!-- <ng-template matStepLabel>Personal Details</ng-template> -->
+                   <div class="row">
+                      <div class="col-md-6 left">
+                          <p>Personal Details</p>
+                      </div>
+                      <div class="col-md-6 right">
+                        <p>Other Details</p>
+                      </div>
+
+                   </div>
+
+                   <div class="form-group">
+                    <input type="text"  placeholder="Name" formControlName="pcrgFirstName" required  class="form-control" #pcrgFirstName value="pcrgFirstName"
+                    [ngClass]="{ 'is-invalid': submitted && f.pcrgFirstName.errors }">
+                    <div *ngIf="submitted && f.pcrgFirstName.errors" class="invalid-feedback">
+                      <div *ngIf="f.pcrgFirstName.errors.required">pcrgFirstName is required</div>
+                    </div>
+
+                  </div>
+
+
+                <div class="form-group">
+                  <input type="text"  placeholder="NIC" formControlName="pcrgNic" required  class="form-control" #pcrgNic value="pcrgNic"
+                  [ngClass]="{ 'is-invalid': submitted && f.pcrgNic.errors }">
+
+                  <div *ngIf="submitted && f.pcrgNic.errors" class="invalid-feedback">
+                    <div *ngIf="f.pcrgNic.errors.required">pcrgNic is required</div>
+                    <div *ngIf="f.pcrgNic.errors.minlength">
+                      NIC must be at least 9 characters
+                    </div>
+                    <div *ngIf="f.pcrgNic.errors.maxlength">
+                      NIC must not exceed 13 characters
+                    </div>
+                  </div>
+                </div>
+
+
+                <div class="form-group">
+                  <textarea type="text" formControlName="pcrgPostAddress" required  class="form-control" placeholder="Postal Address" style="min-height: 100px;" #pcrgPostAddress value="pcrgPostAddress"
+                  [ngClass]="{ 'is-invalid': submitted && f.pcrgPostAddress.errors }">
+                    <div *ngIf="submitted && f.pcrgPostAddress.errors" class="invalid-feedback">
+                      <div *ngIf="f.pcrgPostAddress.errors.required">pcrgPostAddress is required</div>
+                    </div>
+                  </div></textarea>
+                </div>
+
+                <div class="form-group">
+                  <input type="text" placeholder="Phone Number( Mobile)" formControlName="pcrgMobile" required  class="form-control" #pcrgMobile value="pcrgMobile"
+                  [ngClass]="{ 'is-invalid': submitted && f.pcrgMobile.errors }">
+
+                  <div *ngIf="submitted && f.pcrgMobile.errors" class="invalid-feedback">
+                    <div *ngIf="f.pcrgMobile.errors.required">pcrgMobile is required</div>
+                    <div *ngIf="f.pcrgMobile.errors.minlength">
+                      NIC must be at least 9 characters
+                    </div>
+                    <div *ngIf="f.pcrgMobile.errors.maxlength">
+                      NIC must not exceed 11 characters
+                    </div>
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <input type="text" placeholder="Phone Number( Resident /Optional)" formControlName="pcrgMobileResident" required  class="form-control" #pcrgMobileResident value="pcrgMobileResident">
+                </div>
+
+                <div class="form-group"></div>
+                <input type="text" placeholder="Phone Number( Office /Optional)" formControlName="pcrgMobileOffice" required  class="form-control" #pcrgMobileOffice value="pcrgMobileOffice">
+
+                <div class="form-group">
+                  <input type="text"  placeholder="Email" formControlName="pcrgEmail" required  class="form-control" #pcrgEmail value="pcrgEmail"
+                  [ngClass]="{ 'is-invalid': submitted && f.pcrgEmail.errors }">
+
+                  <div *ngIf="submitted && f.pcrgEmail.errors" class="invalid-feedback">
+                    <div *ngIf="f.pcrgEmail.errors.required">Email is required</div>
+                    <div *ngIf="f.pcrgEmail.errors.email">Email is invalid</div>
+                  </div>
+                </div>
+
+
+
+                      <div class="middleBtn">
+                      <button mat-button matStepperNext class="btn">Next</button>
+                    </div>
+                  </form>
+                </mat-step>
+                <mat-step [stepControl]="secondFormGroup" [editable]="isEditable">
+                  <form [formGroup]="secondFormGroup">
+                          <div class="row">
+                            <div class="col-md-6 left">
+                                <p>Personal Details</p>
+                            </div>
+                            <div class="col-md-6 right">
+                              <p>Other Details</p>
+                            </div>
+
+                        </div>
+
+
+
+
+                        <mat-form-field appearance="outline">
+                          <div class="form-group">
+                          <input type="text" matInput placeholder="Qulification" formControlName="pcrgQulification" #pcrgQulification value="pcrgQulification"
+                          [ngClass]="{ 'is-invalid': submitted && f1.pcrgQulification.errors }">
+                        </div>
+                        <div *ngIf="submitted && f1.pcrgQulification.errors" class="invalid-feedback">
+                          <div *ngIf="f1.pcrgQulification.errors.required">pcrgQulification is required</div>
+                        </div>
+                          <mat-icon matSuffix (click)="addEmployee()" > <img src="../../../../assets/image/plus.png" alt=""></mat-icon>
+                        </mat-form-field>
+
+                        <!-- Add qualification -->
+                        <div *ngFor="let employee of qualification().controls; let empIndex = index">
+                          <div>
+                            <div formArrayName="skills">
+
+
+
+                              </div>
+                              <mat-form-field appearance="outline">
+                                <input type="text" matInput placeholder="Qulification" formControlName="pcrgQulification1" #pcrgQulification1 value="">
+
+                              </mat-form-field>
+                            </div>
+                          </div>
+
+                          <div class="form-group">
+                            <input type="text" matInput placeholder="Speciality" formControlName="pcrgSpeciality" required  class="form-control" #pcrgSpeciality value="pcrgSpeciality"
+                            [ngClass]="{ 'is-invalid': submitted && f1.pcrgSpeciality.errors }">
+                            <div *ngIf="submitted && f1.pcrgSpeciality.errors" class="invalid-feedback">
+                              <div *ngIf="f1.pcrgSpeciality.errors.required">pcrgSpeciality is required</div>
+                            </div>
+                          </div>
+
+
+                          <div class="form-group">
+                            <input type="text" matInput placeholder="SLMC Reg No" formControlName="pcrgSLMCRegNo" required  class="form-control" #pcrgSLMCRegNo value="pcrgSLMCRegNo"
+                            [ngClass]="{ 'is-invalid': submitted && f1.pcrgSLMCRegNo.errors }">
+                            <div *ngIf="submitted && f1.pcrgSLMCRegNo.errors" class="invalid-feedback">
+                              <div *ngIf="f1.pcrgSLMCRegNo.errors.required">pcrgSLMCRegNo is required</div>
+                            </div>
+                         </div>
+
+                              <input type="text" matInput placeholder="Fax No" formControlName="pcrgFaxNo" required  class="form-control" #pcrgFaxNo value="pcrgpcrgFaxNo">
+
+                              <input type="text" matInput placeholder="Proposed By" formControlName="pcrgProposedBy" required  class="form-control" #pcrgProposedBy value="pcrgProposedBy">
+
+                              <input type="text" matInput placeholder="Seconded By" formControlName="pcrgSecondedBy" required  class="form-control" #pcrgSecondedBy value="pcrgSecondedBy">
+
+                          <div>
+
+                            <div class="middleBtn">
+                              <button (click)="pcrgSubmitForm()" class="btn" mat-button matStepperNext>Submit</button>
+                            </div>
+
+
+                          </div>
+                  </form>
+                </mat-step>
+
+              </mat-stepper>
+
+
+
+
+            </div>
+            <div class="col-md-6">
+                <img src="../../../../assets/image/three-image.png" alt="" class="image-three" >
+            </div>
+        </div>
+    </div>
+
+
+</div>
+
+<div class="container-fluid cv-back-down"></div>
+
+<!-- End -->
+
